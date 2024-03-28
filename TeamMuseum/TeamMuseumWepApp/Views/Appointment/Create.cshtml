@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"> </script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" asp-append-version="true"></script>
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js" asp-append-version="true"></script>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <form id="appointmentForm">
+            <div class="form-group">
+                <label for="ticketSelect">Ticket</label>
+                <select class="form-control" id="ticketSelect">                   
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="appointmentDate">Appointment Date</label>
+                <input type="date" class="form-control" id="appointmentDate" required>
+            </div>
+            <input type="hidden" id="userId" name="UserId" value="YourUserId">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: 'https://localhost:7011/Ticket/GetAll', 
+                type: 'GET',
+                dataType: 'json', 
+                success: function (data) {
+                    var select = $('#ticketSelect');
+                    select.empty();
+                    var value = JSON.stringify(data);
+                    alert(JSON.stringify(data));
+                    $.each(value.data, function (index, item) {
+                        select.append($('<option>', {
+                            value: item.id, 
+                            text: item.name 
+                        }));
+                    });
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    
+                    console.error('Error fetching tickets:', textStatus, errorThrown);
+                }
+            });
+
+            $('#appointmentForm').on('submit', function (e) {
+                e.preventDefault(); 
+
+                var formData = {
+                    'ticket': $('#ticketSelect').val(),
+                    'date': $('#appointmentDate').val(),
+                    'userId': $('#userId').val()
+                };
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://localhost:7011/Appointment/Create', 
+                    data: formData,
+                    success: function (response) {
+                        // Handle success
+                        console.log('Appointment created:', response);
+                    },
+                    error: function (error) {
+                        // Handle error
+                        console.error('Error creating appointment:', error);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

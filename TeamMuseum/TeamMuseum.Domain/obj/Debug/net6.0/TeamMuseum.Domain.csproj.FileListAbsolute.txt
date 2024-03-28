@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\bin\Debug\net6.0\TeamMuseum.Domain.deps.json
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\bin\Debug\net6.0\TeamMuseum.Domain.dll
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\bin\Debug\net6.0\TeamMuseum.Domain.pdb
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\obj\Debug\net6.0\TeamMuseum.Domain.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\obj\Debug\net6.0\TeamMuseum.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\obj\Debug\net6.0\TeamMuseum.Domain.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\obj\Debug\net6.0\TeamMuseum.Domain.AssemblyInfo.cs
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\obj\Debug\net6.0\TeamMuseum.Domain.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\obj\Debug\net6.0\TeamMuseum.Domain.dll
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\obj\Debug\net6.0\refint\TeamMuseum.Domain.dll
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\obj\Debug\net6.0\TeamMuseum.Domain.pdb
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Domain\obj\Debug\net6.0\ref\TeamMuseum.Domain.dll

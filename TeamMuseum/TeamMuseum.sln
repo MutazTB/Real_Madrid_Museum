@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamMuseum", "TeamMuseum\TeamMuseum.csproj", "{23921A27-56C0-41A8-A0C9-5685ACDD43CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamMuseumWepApp", "TeamMuseumWepApp\TeamMuseumWepApp.csproj", "{9C8D6DF4-4528-49BA-99FD-AC8FB3831037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamMuseum.Domain", "TeamMuseum.Domain\TeamMuseum.Domain.csproj", "{E76947FC-BD0E-4A66-A61D-951C7451CD73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamMuseum.Services", "TeamMuseum.Services\TeamMuseum.Services.csproj", "{811BEEEB-E5F3-4D25-ACD5-99DDCF189814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamMuseum.Repository", "TeamMuseum.Repository\TeamMuseum.Repository.csproj", "{65E379C6-CB12-477F-83FD-503E9E08F0FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23921A27-56C0-41A8-A0C9-5685ACDD43CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23921A27-56C0-41A8-A0C9-5685ACDD43CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23921A27-56C0-41A8-A0C9-5685ACDD43CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23921A27-56C0-41A8-A0C9-5685ACDD43CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C8D6DF4-4528-49BA-99FD-AC8FB3831037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8D6DF4-4528-49BA-99FD-AC8FB3831037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8D6DF4-4528-49BA-99FD-AC8FB3831037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8D6DF4-4528-49BA-99FD-AC8FB3831037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E76947FC-BD0E-4A66-A61D-951C7451CD73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E76947FC-BD0E-4A66-A61D-951C7451CD73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E76947FC-BD0E-4A66-A61D-951C7451CD73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E76947FC-BD0E-4A66-A61D-951C7451CD73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811BEEEB-E5F3-4D25-ACD5-99DDCF189814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811BEEEB-E5F3-4D25-ACD5-99DDCF189814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811BEEEB-E5F3-4D25-ACD5-99DDCF189814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811BEEEB-E5F3-4D25-ACD5-99DDCF189814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65E379C6-CB12-477F-83FD-503E9E08F0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65E379C6-CB12-477F-83FD-503E9E08F0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E379C6-CB12-477F-83FD-503E9E08F0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65E379C6-CB12-477F-83FD-503E9E08F0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B445863D-B3F4-4993-8BA7-24DD75D3DD31}
+	EndGlobalSection
+EndGlobal

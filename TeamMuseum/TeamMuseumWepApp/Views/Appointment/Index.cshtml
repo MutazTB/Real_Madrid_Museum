@@ -1,0 +1,82 @@
+﻿<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"> </script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" asp-append-version="true"></script>
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js" asp-append-version="true"></script>
+    
+    <style>
+        .car-table {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>   
+    <div class="car-table">
+        <table class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th> Visitor Name </th>
+                    <th> Appointment Date </th>
+                    <th> Actions </th>
+                </tr>
+            </thead>
+            <tbody id="Appointment">
+               
+            </tbody>
+        </table>
+    </div>
+    <div id="paginationContainer"></div>
+    @*<script>
+        $(document).ready(function () {
+            var table = $('#car').DataTable({
+                "paging": true,
+                "pageLength": 3
+            });
+        });
+    </script>*@
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        
+        new DataTable('#Appointment', {
+    pagingType: 'simple_numbers'
+});
+
+        $.ajax({
+            url: 'https://localhost:7011/Appointment/GetAll', // Replace with your endpoint URL
+            method: 'GET',
+            success: function (data) {
+                var value = JSON.stringify(data);
+                alert(JSON.stringify(data))
+                $.each(value.data, function (index, appointment) {
+                    var statusClass = complaint.status == '1' ? 'status-green' : 'status-red';
+                    var newRow = "";
+                    newRow = '<tr>' +
+                        '<td>' + index++ + '</td>' +
+                        '<td>' + appointment.visitorName + '</td>' + 
+                        '<td>' + appointment.appointmentDate + '</td>' +
+                        '<td>' +
+                        '<button class="btn btn-success" data_Id="' + appointment.id + '">Approve</button>' +
+                        '<button class="btn btn-danger" data_Id="' + appointment.id + '">Reject</button>' +
+                        '<button class="btn btn-primary" data_Id="' + appointment.id + '">View Details</button>' +
+                        '</td>' +
+                        '<td><span class="badge ' + statusClass + '">' + appointment.status + '</span></td>' +
+                        '</tr>';
+                    $('#Appointment').append(newRow);
+                });
+            },
+            error: function (err) {
+                // Handle errors if any
+                console.error('An error occurred:', err);
+            }
+        });
+    });
+</script>

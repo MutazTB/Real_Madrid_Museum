@@ -1,0 +1,17 @@
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\bin\Debug\net6.0\TeamMuseum.Services.deps.json
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\bin\Debug\net6.0\TeamMuseum.Services.dll
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\bin\Debug\net6.0\TeamMuseum.Services.pdb
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\bin\Debug\net6.0\TeamMuseum.Domain.dll
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\bin\Debug\net6.0\TeamMuseum.Domain.pdb
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\obj\Debug\net6.0\TeamMuseum.Services.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\obj\Debug\net6.0\TeamMuseum.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\obj\Debug\net6.0\TeamMuseum.Services.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\obj\Debug\net6.0\TeamMuseum.Services.AssemblyInfo.cs
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\obj\Debug\net6.0\TeamMuseum.Services.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\obj\Debug\net6.0\TeamMuseum.Services.csproj.CopyComplete
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\obj\Debug\net6.0\TeamMuseum.Services.dll
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\obj\Debug\net6.0\refint\TeamMuseum.Services.dll
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\obj\Debug\net6.0\TeamMuseum.Services.pdb
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\obj\Debug\net6.0\ref\TeamMuseum.Services.dll
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\bin\Debug\net6.0\TeamMuseum.Repository.dll
+C:\Users\admin\Desktop\TeamMuseum\TeamMuseum.Services\bin\Debug\net6.0\TeamMuseum.Repository.pdb
